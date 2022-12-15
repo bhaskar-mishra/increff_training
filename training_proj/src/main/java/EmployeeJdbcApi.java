@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class EmployeeApi {
-    private static final Logger logger = Logger.getLogger(EmployeeApi.class);
+public class EmployeeJdbcApi {
+    private static final Logger logger = Logger.getLogger(EmployeeHibernateApi.class);
     private Connection con;
 
 //    public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
@@ -23,7 +23,7 @@ public class EmployeeApi {
 //        con.close();
 //    }
 
-    public EmployeeApi() throws IOException, ClassNotFoundException, SQLException {
+    public EmployeeJdbcApi() throws IOException, ClassNotFoundException, SQLException {
         BasicConfigurator.configure();
         Properties props = new Properties();
         InputStream inputStream = new FileInputStream("employee.properties");

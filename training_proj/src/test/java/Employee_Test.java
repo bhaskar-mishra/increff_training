@@ -10,7 +10,7 @@ import java.sql.SQLException;
 public class Employee_Test {
     @Test
     public void sayHello() throws SQLException, IOException, ClassNotFoundException {
-        EmployeeApi obj = new EmployeeApi();
+        EmployeeJdbcApi obj = new EmployeeJdbcApi();
         obj.delete();
         obj.insert();
         ResultSet rs = obj.select();
