@@ -62,7 +62,7 @@ public class EmployeeApi {
         logger.info("deleting rows");
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("select * from employee");
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList();
         while (rs.next())
         {
             list.add(rs.getInt(1));
