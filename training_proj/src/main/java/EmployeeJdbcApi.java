@@ -13,15 +13,7 @@ public class EmployeeJdbcApi {
     private static final Logger logger = Logger.getLogger(EmployeeHibernateApi.class);
     private Connection con;
 
-//    public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
-//
-//        delete(con);
-//        insert(con);
-//        select(con);
-//        delete(con);
-//        select(con);
-//        con.close();
-//    }
+
 
     public EmployeeJdbcApi() throws IOException, ClassNotFoundException, SQLException {
         BasicConfigurator.configure();
